@@ -10,10 +10,12 @@ fields:
     name: Province_State
     description: The subregion within a country
     data_type: string
+  active:
+    usage: if a row doesn't have a value, it should be considered zero
+    data_type: integer
   recovered:
     name: Recovered
     description: number of recovered cases
-    usage: if a row doesn't have a value, it should be considered zero
     data_type: range
   country: 
     name: Country_Region
