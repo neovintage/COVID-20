@@ -1,0 +1,22 @@
+description: Information about cases, deaths and recoveries by country.
+files_described: ./
+
+fields:
+  state:
+    name: Province_State
+    description: The subregion within a country
+    data_type: string
+  country: 
+    name: Country_Region
+    description: the country of the case
+    data_type: categorical
+    valid_values:
+      - US
+      - DE
+      - LT
+  recovered:
+    name: Recovered
+    description: number of recovered cases
+    usage: if a row doesn't have a value, it should be considered zero
+  confirmed:
+    name: Confirmed Case
